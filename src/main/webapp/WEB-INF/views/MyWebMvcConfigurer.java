@@ -25,6 +25,6 @@ public class MyWebMvcConfigurer implements WebMvcConfigurer {
 
   @Override
   public void addResourceHandlers(ResourceHandlerRegistry registry) {
-    registry.addResourceHandler("/views/**").addResourceLocations("classpath:/views/");
+    registry.addResourceHandler("WEB-INF/views/**").addResourceLocations("WEB-INF/views/");
   }
 }
